@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@font-face { /*parametro de importacao da fonte direto da pastas*/
+    font-family: "FonteLogo";
+    src: url(../_fonts/bubblegum-sans-regular.otf)
+}
+@font-face {
+    font-style: "FonteRegular";
+    src: url(../_fonts/TitilliumWeb-Regular.ttf);
+}
+
+body {
+    background-color: #dddddd;
+    color: rgb(0, 0, 0);
+}
+
+div#interface {
+    width: 1000px;
+    background-color: #ffffff;
+    margin: -21px auto 0px auto; /* parametros do margin: cima,direita,baixo,esquerda*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 20px; /*margem interna dos objetos*/
+}
+
+header#cabecalho img#icone {
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 840px;
+    margin-top: -80px;
+    /*left: 500px;
+    top: 80px;*/
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /*iniciei com .. para voltar uma pasta e poder acessar uma pasta anterior no sistema, onde estao as imagens*/
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'FonteRegular', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* Formatação de imagens com legendas*/
+
+figure.foto-legenda {
+    position: relative; /*objeto container pai*/
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute; /*objeto container filho*/
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*Formatação para o menu*/
+nav#menu {
+    display: block; /* permite mostrar o menu flutuar como um bloco*/
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    /*position: absolute; /* posicao absolute deixa o item na area total do site e relativo é em relacao do item dentro de outro item*/
+    /*top: -21px;
+    left: 550px;*/
+    position: relative;
+    box-sizing: border-box;
+    margin-top: -171px;
+    margin-left: 320px;
+    
+
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 5px;
+    /*abaixo um prefixer do item de transição, aumentando a compatibilidade com os navegadores*/
+    -webkit-transition: background-color 1s;-o-transition: background-color 1s;transition: background-color 1s;
+    transition: background-color 1s;
+
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+
+}
+
+nav#menu h1{ /* escondi a mesnagem Menu Principal mas mantive a descrição no site*/
+    display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none; /*remove o sublinhado padrao do texto html*/
+}
+
+nav#menu a:hover {
+    color: white;
+    /* text-decoration: underline; */
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+}
+
+aside#lateral {
+    display: block;
+    width: 450px;
+    float:right;
+}
+
+footer#rodape {
+    clear: both;
+}

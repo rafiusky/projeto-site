@@ -141,6 +141,47 @@ section#corpo {
     display: block;
     width: 500px;
     float: left;
+    border-right: 1px solid #606060;
+    padding-right: 25px;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.colunaesquerda {
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.colunadireita {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
 }
 
 aside#lateral {
@@ -150,5 +191,10 @@ aside#lateral {
 }
 
 footer#rodape {
-    clear: both;
+    clear: both; /* limpaa aa divisao que foi feita, mostrando o conteudo fora da divisao "float" */
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
 }

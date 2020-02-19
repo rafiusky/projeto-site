@@ -23,10 +23,10 @@ div#interface {
 }
 
 header#cabecalho img#icone {
-    position: relative;
+    position: absolute;
     box-sizing: border-box;
     margin-left: 840px;
-    margin-top: -80px;
+    margin-top: -70px;
     /*left: 500px;
     top: 80px;*/
 }
@@ -108,12 +108,13 @@ nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     /*position: absolute; /* posicao absolute deixa o item na area total do site e relativo é em relacao do item dentro de outro item*/
-    /*top: -21px;
-    left: 550px;*/
-    position: relative;
-    box-sizing: border-box;
-    margin-top: -171px;
+    top: -21px;
+    position: absolute;
     margin-left: 320px;
+    
+    /*box-sizing: border-box;*/
+    /*margin-top: -180px;
+    /*margin-left: 320px;*/
     
 
 }
